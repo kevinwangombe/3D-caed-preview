@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  padding: 2rem 1rem;
+  text-align: start;
+  justify-content: center;
+}
+
+.container > div {
+  height: 60vh;
+}
+
+img {
+  padding: 1.5rem 1.25rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding: 0rem 1.25rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedan button a {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button a {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button a {
+  color: hsl(179, 100%, 13%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.2;
+  padding: 1.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+h2,
+button {
+  color: hsl(0, 0%, 95%);
+}
+
+button {
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+button a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sedan {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  button {
+    padding: 1rem 1rem;
+    margin-left: 1rem;
+    border-radius: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sedan {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container > div {
+    height: 70vh;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .sedan {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
